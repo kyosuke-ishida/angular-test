@@ -1,0 +1,19 @@
+<div class="contents">
+    <ng-container *ngFor="let c of cards | orderby: 'displayOrder'">
+        <div class="wrapper">
+            <!-- microCMSでクエリパラメータを指定 -->
+            <div class="text">
+                <div class="title">{{c.title}}</div>
+                <div class="description">{{c.description}}</div>
+            </div>
+            <!-- <div 
+                [style.backgroundImage]="'url('+ c.image.url +'?w=500&?fit=crop&?fm=webp)'"
+                class="image">
+            </div>     -->
+            <div 
+                [style.backgroundImage]="'url('+ c.image.url +'?fit=max&w=500&h=240&?fm=webp)'"
+                class="image">
+            </div>    
+        </div>
+    </ng-container> 
+</div>

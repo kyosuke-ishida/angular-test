@@ -1,0 +1,9 @@
+{
+    "/api/*": {
+      "target": "https://ispec-test.microcms.io",
+      "secure": false,
+      "logLevel": "debug"
+    }
+  }
+
+  
